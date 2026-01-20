@@ -142,7 +142,7 @@
                 android:layout_height="wrap_content"
                 style="@style/single_marquee"
                 android:gravity="center"
-                android:fontFamily="@font/nunito_medium"
+                android:fontFamily="@font/crimson_text_semi_bold"
                 android:text="@string/no_item_here"
                 android:textColor="@color/app_color"
                 android:freezesText="true"
