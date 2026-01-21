@@ -2,6 +2,7 @@ package com.maker.ui.background.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.maker.base.AbsBaseAdapter
 import com.maker.base.AbsBaseDiffCallBack
 import com.maker.data.model.SelectedModel
@@ -21,7 +22,8 @@ class BackGroundTextAdapter :
         binding.imv.onSingleClick {
             onClick?.invoke(position)
         }
-        Glide.with(binding.root).load(data.path).into(binding.imv)
+        Glide.with(binding.root).load(data.path).encodeQuality(70)
+            .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC).into(binding.imv)
     }
 
     class DiffCallBack : AbsBaseDiffCallBack<SelectedModel>() {

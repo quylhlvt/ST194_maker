@@ -2,6 +2,7 @@ package com.maker.ui.category
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.facebook.shimmer.ShimmerDrawable
 import com.maker.base.AbsBaseAdapter
 import com.maker.base.AbsBaseDiffCallBack
@@ -24,7 +25,8 @@ class CategoryAdapter : AbsBaseAdapter<CustomModel, ItemCategoryBinding>(
         val shimmerDrawable = ShimmerDrawable().apply {
             setShimmer(shimmer)
         }
-        Glide.with(binding.root).load(data.avt).placeholder(shimmerDrawable).into(binding.imv)
+        Glide.with(binding.root).load(data.avt).encodeQuality(70).diskCacheStrategy(
+            DiskCacheStrategy.AUTOMATIC).placeholder(shimmerDrawable).into(binding.imv)
         binding.imv.onSingleClick {
             onCLick?.invoke(position)
         }

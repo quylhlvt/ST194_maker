@@ -63,8 +63,7 @@ class PartAdapter : AbsBaseAdapter<String, ItemPartBinding>(R.layout.item_part, 
             .load(data)
             .encodeQuality(90)
             .override(256)
-            .dontTransform()
-            .diskCacheStrategy(DiskCacheStrategy.DATA)
+            .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
             .into(binding.imv)
     }
 }

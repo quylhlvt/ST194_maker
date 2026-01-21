@@ -26,9 +26,9 @@ class StikerAdapter :
             onClick?.invoke(data.path)
         }
         Glide.with(binding.root).load(data.path)
-            .override(512, 512)
+            .override(256, 256)
             .encodeQuality(50)
-            .diskCacheStrategy(DiskCacheStrategy.RESOURCE).into(binding.imv)
+            .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC).into(binding.imv)
     }
 
     class DiffCallBack :

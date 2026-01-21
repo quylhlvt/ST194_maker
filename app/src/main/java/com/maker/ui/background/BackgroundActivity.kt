@@ -160,6 +160,7 @@ class BackgroundActivity : AbsBaseActivity<ActivityBackgroundBinding>() {
                 )
                 itemAnimator = null
                 adapter = adapterImage
+                setHasFixedSize(true)
             }
 
             iclText.rcvColor.itemAnimator = null
@@ -226,7 +227,7 @@ class BackgroundActivity : AbsBaseActivity<ActivityBackgroundBinding>() {
                 bitmapText
                     ?: Glide.with(this@BackgroundActivity).load(path).override(512, 512)
                         .encodeQuality(50)
-                        .diskCacheStrategy(DiskCacheStrategy.RESOURCE).submit()
+                        .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC).submit()
                         .get().toBitmap()
             val drawableEmoji =
                 viewModel.loadDrawableEmoji(this@BackgroundActivity, bitmapDefault, isCharacter)
