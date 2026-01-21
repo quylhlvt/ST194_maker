@@ -43,7 +43,7 @@ class NavAdapter(context: Context) : AbsBaseAdapter<BodyPartModel, ItemNavigatio
         binding.mainNav.setMargins(0,15.dp(ct),8.dp(ct), 15.dp(ct))
         Glide.with(binding.root).load(data.icon).encodeQuality(90).override(256).diskCacheStrategy(DiskCacheStrategy.RESOURCE).into(binding.imv)
         if (posNav == position) {
-            binding.mainNav.setMargins(0, 0.dp(ct),8.dp(ct), 30.dp(ct))
+            binding.mainNav.setMargins(0, 5.dp(ct),8.dp(ct), 25.dp(ct))
             binding.bg.setCardBackgroundColor(ContextCompat.getColor(binding.root.context,R.color.FFCC00))
         } else {
             binding.bg.setCardBackgroundColor(ContextCompat.getColor(binding.root.context,R.color.white))

@@ -170,6 +170,7 @@ class CustomviewActivity : AbsBaseActivity<ActivityCustomizeBinding>() {
                         .listPath[pos]
                 )
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .encodeQuality(60)
                 .priority(Priority.HIGH)
                 .skipMemoryCache(false)                     // Cache memory
                 .dontAnimate()
@@ -490,7 +491,7 @@ class CustomviewActivity : AbsBaseActivity<ActivityCustomizeBinding>() {
                 }
                 llLoading.visibility = View.VISIBLE
 //                applyGradientToLoadingText()
-//                animationView.visibility = View.VISIBLE
+                animationView.visibility = View.VISIBLE
                 val a = arrBlackCentered[blackCentered].avt.split("/")
                 var b = a[a.size - 2]
                 saveBitmap(
@@ -502,7 +503,7 @@ class CustomviewActivity : AbsBaseActivity<ActivityCustomizeBinding>() {
                     if (it) {
                         viewModel.deleteAvatar(pathOld)
                         llLoading.visibility = View.GONE
-//                        animationView.visibility = View.GONE
+                        animationView.visibility = View.GONE
                         //lop layer
                         var x = arrayListOf<ArrayList<Int>>()
                         DataHelper.listImageSortView.forEachIndexed { _pos, icon ->
@@ -530,7 +531,7 @@ class CustomviewActivity : AbsBaseActivity<ActivityCustomizeBinding>() {
 
                     } else {
                         llLoading.visibility = View.GONE
-//                        animationView.visibility = View.GONE
+                        animationView.visibility = View.GONE
                         showToast(
                             this@CustomviewActivity, R.string.save_failed
                         )

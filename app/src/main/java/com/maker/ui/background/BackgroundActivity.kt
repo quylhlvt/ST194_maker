@@ -84,7 +84,7 @@ class BackgroundActivity : AbsBaseActivity<ActivityBackgroundBinding>() {
 //
 //    }
     override fun initView() {
-        binding.btnBg.updateMargin(this@BackgroundActivity, bottomDp = 16)
+        binding.btnBg.updateMargin(this@BackgroundActivity, bottomDp = 15)
 //        binding.txtContent.post {
 //            binding.txtContent.gradientHorizontal(
 //                startColor = "#01579B".toColorInt(),
@@ -497,7 +497,7 @@ class BackgroundActivity : AbsBaseActivity<ActivityBackgroundBinding>() {
                 // Nút được chọn
                 btn.isSelected = true
                 btn.setImageResource(selectedIcon)
-                btn.updateMargin(this@BackgroundActivity, bottomDp = 16)
+                btn.updateMargin(this@BackgroundActivity, bottomDp = 15)
             } else {
                 // Các nút khác → reset
                 btn.isSelected = false

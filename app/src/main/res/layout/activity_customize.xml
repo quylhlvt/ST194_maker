@@ -15,17 +15,17 @@
             android:id="@+id/appCompatImageView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"
             android:elevation="-1dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/img_bg_splash" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imvBack"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:elevation="1dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="50dp"
+            android:elevation="1dp"
             android:src="@drawable/ic_back_app"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,8 +35,8 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/ic_next"
             android:adjustViewBounds="true"
+            android:src="@drawable/ic_next"
             app:layout_constraintBottom_toBottomOf="@id/imvBack"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/imvBack" />
@@ -58,8 +58,8 @@
                 android:layout_height="32dp"
                 android:elevation="1dp"
                 android:src="@drawable/ic_reset"
-                app:layout_constraintEnd_toStartOf="@+id/btnRevert"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnRevert"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,23 +74,23 @@
                 app:layout_constraintHorizontal_chainStyle="spread"
                 app:layout_constraintStart_toEndOf="@+id/btnReset"
                 app:layout_constraintTop_toTopOf="parent" />
-<!--            <androidx.appcompat.widget.AppCompatImageView-->
-<!--                android:id="@+id/btnSee"-->
-<!--                android:layout_width="32dp"-->
-<!--                android:layout_height="32dp"-->
-<!--                android:visibility="gone"-->
-<!--                android:src="@drawable/ic_show"-->
-<!--                app:layout_constraintStart_toEndOf="@+id/btnReset"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent" />-->
+            <!--            <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                android:id="@+id/btnSee"-->
+            <!--                android:layout_width="32dp"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:src="@drawable/ic_show"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/btnReset"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <RelativeLayout
             android:id="@+id/rl"
             android:layout_width="0dp"
             android:layout_height="0dp"
-           android:layout_marginVertical="8dp"
+            android:layout_marginVertical="8dp"
             android:elevation="0dp"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/llNav"
@@ -107,17 +107,16 @@
         </RelativeLayout>
 
 
-
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnDice"
             android:layout_width="39dp"
             android:layout_height="39dp"
-            android:elevation="2dp"
-            android:layout_marginBottom="28dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginBottom="28dp"
+            android:elevation="2dp"
             android:src="@drawable/imv_random"
             app:layout_constraintBottom_toTopOf="@+id/img_bgnav"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imvShowColor"
@@ -130,55 +129,57 @@
             android:src="@drawable/imv_color"
             app:layout_constraintBottom_toTopOf="@+id/img_bgnav"
             app:layout_constraintStart_toStartOf="parent" />
+
         <androidx.appcompat.widget.AppCompatImageView
-            android:visibility="invisible"
             android:id="@+id/imvNoColor"
             android:layout_width="60dp"
             android:layout_height="0dp"
             android:elevation="2dp"
-            app:layout_constraintDimensionRatio="1:1"
             android:src="@drawable/imv_nocolor"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/frameRecycle"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="@+id/frameRecycle"
             app:layout_constraintStart_toStartOf="@+id/frameRecycle" />
+
         <FrameLayout
             android:id="@+id/frameRecycle"
-            android:elevation="2dp"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginVertical="10dp"
-            app:layout_constraintStart_toStartOf="@+id/imvShowColor"
-            app:layout_constraintEnd_toEndOf="@+id/imvShowColor"
+            android:elevation="2dp"
             app:layout_constraintBottom_toTopOf="@id/imvShowColor"
+            app:layout_constraintEnd_toEndOf="@+id/imvShowColor"
+            app:layout_constraintStart_toStartOf="@+id/imvShowColor"
             app:layout_constraintTop_toBottomOf="@+id/imvBack">
 
             <LinearLayout
-                android:layout_gravity="bottom"
                 android:id="@+id/llColor"
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_8_color"
                 android:elevation="1dp"
                 android:gravity="center"
-                android:background="@drawable/bg_8_color"
-                android:orientation="vertical"
-                >
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginVertical="8dp">
+                android:orientation="vertical">
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/rcvColor"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:layout_gravity="center"
-                            android:clipToPadding="false"
-                            android:orientation="vertical"
-                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                            tools:itemCount="10"
-                            tools:listitem="@layout/item_color" />
-                    </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="8dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:clipToPadding="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="10"
+                        tools:listitem="@layout/item_color" />
+                </RelativeLayout>
             </LinearLayout>
         </FrameLayout>
 
@@ -218,7 +219,7 @@
         <ImageView
             android:id="@+id/img_bgnav"
             android:layout_width="0dp"
-            android:layout_height="55dp"
+            android:layout_height="42dp"
             android:adjustViewBounds="true"
             android:scaleType="fitXY"
             android:src="@drawable/bg_nav_custom"
@@ -226,13 +227,14 @@
             app:layout_constraintEnd_toEndOf="@id/llNav"
             app:layout_constraintStart_toStartOf="@id/llNav"
             app:layout_constraintTop_toTopOf="@+id/llNav" />
+
         <LinearLayout
             android:id="@+id/llNav"
             android:layout_width="0dp"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_marginHorizontal="25dp"
-            android:paddingHorizontal="5dp"
             android:gravity="center"
+            android:paddingHorizontal="5dp"
             app:layout_constraintBottom_toTopOf="@+id/llPart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -249,62 +251,66 @@
         </LinearLayout>
 
         <LinearLayout
-            android:elevation="4dp"
-            android:visibility="gone"
             android:id="@+id/llLoading"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="#A0949494"
+            android:elevation="4dp"
             android:gravity="center"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#80545454"
-                android:weightSum="800"
+                android:gravity="center"
                 android:orientation="vertical"
-                android:gravity="center">
+                android:weightSum="800">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_weight="155"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginHorizontal="22dp">
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_weight="155">
 
                     <ImageView
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:src="@drawable/bg_dialog"
                         android:adjustViewBounds="true"
                         android:scaleType="fitXY"
+                        android:src="@drawable/bg_dialog"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+
                     <FrameLayout
                         android:id="@+id/titleFame"
                         android:layout_width="0dp"
                         android:layout_height="41dp"
                         android:background="@drawable/bg_title_dialog"
-                        app:layout_constraintEnd_toEndOf="parent"
                         android:elevation="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
+
                         <TextView
-                            style="@style/single_marquee"
-                            app:strokeJoinStyle="miter"
                             android:id="@+id/txtTitle"
-                            android:gravity="center"
-                            android:layout_marginHorizontal="0dp"
-                            android:textSize="18sp"
-                            android:textColor="@color/white"
-                            android:fontFamily="@font/nunito_bold"
+                            style="@style/single_marquee"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="@string/loading"/>
+                            android:layout_marginHorizontal="0dp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:gravity="center"
+                            android:text="@string/loading"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            app:strokeJoinStyle="miter" />
 
                     </FrameLayout>
+
                     <TextView
                         android:id="@+id/txtContent"
                         android:layout_width="0dp"
@@ -315,35 +321,35 @@
                         android:text="@string/wait_a_few_second"
                         android:textColor="@color/app_color"
                         android:textSize="16dp"
-                        app:layout_constraintBottom_toTopOf="@+id/btnNo"
+                        android:layout_marginBottom="-30dp"
+                        app:layout_constraintBottom_toTopOf="@+id/animationView"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/titleFame" />
 
-                    <!--                       -->
-                    <!--                        <com.airbnb.lottie.LottieAnimationView-->
-                    <!--                            android:id="@+id/animationView"-->
-                    <!--                            android:layout_width="100dp"-->
-                    <!--                            android:layout_height="100dp"-->
-                    <!--                            android:layout_marginTop="-20dp"-->
-                    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toBottomOf="@+id/txtContent"-->
-                    <!--                            app:lottie_autoPlay="true"-->
-                    <!--                            app:lottie_loop="true"-->
-                    <!--                            app:lottie_rawRes="@raw/json_loading" />-->
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/json_loading" />
 
                     <TextView
-                        android:visibility="gone"
                         android:id="@+id/btnNo"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/bg_8_color"
+                        android:fontFamily="@font/nunito_regular"
                         android:gravity="center"
                         android:text="@string/no"
                         android:textColor="@color/app_color"
-                        android:fontFamily="@font/nunito_regular"
+                        android:visibility="gone"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintDimensionRatio="1.01:0.36"
                         app:layout_constraintEnd_toStartOf="@+id/btnYes"
@@ -351,16 +357,16 @@
                         app:layout_constraintTop_toBottomOf="@+id/txtContent" />
 
                     <TextView
-                        android:visibility="gone"
                         android:id="@+id/btnYes"
                         android:layout_width="0dp"
                         android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
                         android:background="@drawable/bg_btn_loading_yes"
+                        android:fontFamily="@font/nunito_regular"
                         android:gravity="center"
                         android:text="@string/tv_yes"
                         android:textColor="@color/white"
-                        android:layout_marginEnd="20dp"
-                        android:fontFamily="@font/nunito_regular"
+                        android:visibility="gone"
                         app:layout_constraintDimensionRatio="1.01:0.36"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/btnNo"

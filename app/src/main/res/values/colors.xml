@@ -14,6 +14,7 @@
     <color name="color_app">#205ABE</color>
     <color name="_CCCCCC">#cccccc</color>
     <color name="showdown_olive">#1F000000</color>
+    <color name="color_draw">#729E7428</color>
 
     <color name="color_1">#E2D2D2</color>
     <color name="color_2">#DCD5FF</color>
@@ -71,7 +72,6 @@
     <color name="native_text_color">#000000</color>
     <color name="stroke_forcus_1">#6ADFFF</color>
     <color name="stroke_forcus_2">#3175EB</color>
-    <color name="color_draw">#F2AAF6</color>
     <color name="color_content_dialog">#991F2F4F</color>
     <color name="app_color">#AB7920</color>
     <color name="app_color2">#5F2D08</color>
