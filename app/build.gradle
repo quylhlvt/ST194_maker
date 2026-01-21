@@ -10,10 +10,10 @@ plugins {
 }
 
 android {
-    namespace 'com.ocmaker.fullbody.creator'
+    namespace 'com.maker'
     compileSdk 36
     defaultConfig {
-        applicationId "com.ocmaker.fullbody.creator"
+        applicationId "com.maker"
         minSdk 24
         targetSdk 36
         versionCode 1

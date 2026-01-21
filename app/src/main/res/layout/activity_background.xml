@@ -68,7 +68,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <com.ocmaker.fullbody.creator.custom.DrawView
+        <com.maker.custom.DrawView
             android:id="@+id/drawView"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="80dp"
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
-        </com.ocmaker.fullbody.creator.custom.DrawView>
+        </com.maker.custom.DrawView>
 
         <ImageView
             android:id="@+id/navBottom"
@@ -284,17 +284,17 @@
                         app:layout_constraintTop_toBottomOf="@+id/titleFame" />
 
 <!--                       -->
-<!--                        <com.airbnb.lottie.LottieAnimationView-->
-<!--                            android:id="@+id/animationView"-->
-<!--                            android:layout_width="100dp"-->
-<!--                            android:layout_height="100dp"-->
-<!--                            android:layout_marginTop="-20dp"-->
-<!--                            app:layout_constraintEnd_toEndOf="parent"-->
-<!--                            app:layout_constraintStart_toStartOf="parent"-->
-<!--                            app:layout_constraintTop_toBottomOf="@+id/txtContent"-->
-<!--                            app:lottie_autoPlay="true"-->
-<!--                            app:lottie_loop="true"-->
-<!--                            app:lottie_rawRes="@raw/json_loading" />-->
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="-20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtContent"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/json_loading" />
 
                         <TextView
                             android:visibility="gone"
