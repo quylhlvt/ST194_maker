@@ -1048,7 +1048,6 @@ open class DrawView(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
         val scaleX = values[Matrix.MSCALE_X]
         val skewY = values[Matrix.MSKEW_Y]
         val currentScale = sqrt(scaleX * scaleX + skewY * skewY)
-
         // Cache kết quả nếu scale không thay đổi nhiều
         if (abs(currentScale - lastCheckedScale) < 0.001f) {
             return lastScaleValid
@@ -1059,7 +1058,6 @@ open class DrawView(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
     }
     override fun onDetachedFromWindow() {
         super.onDetachedFromWindow()
-        // Clear tất cả pending tasks
         handler.removeCallbacksAndMessages(null)
     }
 }

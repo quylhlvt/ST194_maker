@@ -22,17 +22,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.maker.utils.StrokeAppCompatTextView
+        <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="100dp"
             android:ellipsize="marquee"
-            android:textColor="@color/white"
+            android:textColor="@color/app_color2"
             android:textSize="26sp"
             app:strokeWidth="2dp"
             app:strokeColor="@color/app_color"
-            android:fontFamily="@font/cherry_bomb_one_regular"
+            android:fontFamily="@font/crimsontext_regular"
             android:gravity="center"
             android:marqueeRepeatLimit="3"
             android:singleLine="true"
@@ -87,7 +87,6 @@
                 android:scaleType="centerCrop"
                 />
         </com.google.android.material.card.MaterialCardView>
-
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvContent"
             android:layout_width="match_parent"
