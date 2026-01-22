@@ -90,7 +90,7 @@
                     android:layout_width="0dp"
                     android:layout_height="36dp"
                     android:background="@drawable/bg_btn_loading_yes"
-                    android:fontFamily="@font/roboto_medium"
+                    android:fontFamily="@font/crimsontext_regular"
                     android:gravity="center"
                     android:text="@string/ok"
                     android:textColor="@color/white"

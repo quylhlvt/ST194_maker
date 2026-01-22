@@ -1,4 +1,4 @@
-package com.maker
+package com.fokalore.ocmaker.create
 
 import org.junit.Assert
 import org.junit.Test

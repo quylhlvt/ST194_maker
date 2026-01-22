@@ -6,7 +6,7 @@
 
         <variable
             name="languageModel"
-            type="com.maker.data.model.LanguageModel" />
+            type="com.fokalore.ocmaker.create.data.model.LanguageModel" />
     </data>
 
 

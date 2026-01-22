@@ -23,22 +23,20 @@
             android:id="@+id/imvBack"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="50dp"
             android:elevation="1dp"
             android:src="@drawable/ic_back_app"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/drawView"
             app:layout_constraintTop_toTopOf="parent" />
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnSave"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:elevation="1dp"
-            android:layout_marginEnd="16dp"
             android:src="@drawable/ic_save"
             android:adjustViewBounds="true"
             app:layout_constraintBottom_toBottomOf="@id/imvBack"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/drawView"
             app:layout_constraintTop_toTopOf="@id/imvBack" />
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/llTop"
@@ -77,13 +75,14 @@
             app:layout_constraintStart_toStartOf="@+id/drawView"
             />
 
-        <com.maker.custom.DrawView
+        <com.fokalore.ocmaker.create.custom.DrawView
             android:id="@+id/drawView"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="70dp"
             android:layout_width="0dp"
             android:elevation="1dp"
             android:layout_height="0dp"
+            android:layout_marginHorizontal="30dp"
             android:layerType="hardware"
             app:layout_constraintDimensionRatio="3:4.68"
             app:layout_constraintEnd_toEndOf="parent"
@@ -97,13 +96,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop" />
-        </com.maker.custom.DrawView>
+        </com.fokalore.ocmaker.create.custom.DrawView>
 
         <ImageView
             android:id="@+id/navBottom"
             android:layout_width="0dp"
             android:layout_height="37dp"
             android:gravity="center"
+            android:elevation="2dp"
             android:scaleType="fitXY"
             android:src="@drawable/bg_nav_bg"
             app:layout_constraintTop_toTopOf="@id/llBottom"
@@ -119,7 +119,7 @@
             android:gravity="center"
             android:elevation="2dp"
             android:orientation="horizontal"
-            android:paddingHorizontal="35dp"
+            android:paddingHorizontal="30dp"
             app:layout_constraintStart_toStartOf="@+id/drawView"
             app:layout_constraintEnd_toEndOf="@+id/drawView"
             app:layout_constraintBottom_toTopOf="@+id/guideline_vertical">
@@ -157,8 +157,8 @@
             android:id="@+id/ctl"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent
-"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:elevation="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/llBottom">
@@ -267,7 +267,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginHorizontal="0dp"
-                            android:fontFamily="@font/nunito_bold"
+                            android:fontFamily="@font/crimson_text_bold"
                             android:gravity="center"
                             android:text="@string/loading"
                             android:textColor="@color/white"
@@ -281,7 +281,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
-                        android:fontFamily="@font/nunito_regular"
+                        android:fontFamily="@font/crimsontext_regular"
                         android:gravity="center"
                         android:text="@string/wait_a_few_second"
                         android:textColor="@color/app_color"
@@ -310,7 +310,7 @@
                         android:layout_height="36dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/bg_8_color"
-                        android:fontFamily="@font/nunito_regular"
+                        android:fontFamily="@font/crimsontext_regular"
                         android:gravity="center"
                         android:text="@string/no"
                         android:textColor="@color/app_color"
@@ -327,7 +327,7 @@
                         android:layout_height="36dp"
                         android:layout_marginEnd="20dp"
                         android:background="@drawable/bg_btn_loading_yes"
-                        android:fontFamily="@font/nunito_regular"
+                        android:fontFamily="@font/crimsontext_regular"
                         android:gravity="center"
                         android:text="@string/tv_yes"
                         android:textColor="@color/white"

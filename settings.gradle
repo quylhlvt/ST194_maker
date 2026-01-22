@@ -39,5 +39,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Maker"
+rootProject.name = "Folklore OC Maker"
 include ':app'
