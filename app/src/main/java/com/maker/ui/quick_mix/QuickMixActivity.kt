@@ -46,12 +46,9 @@ class QuickMixActivity : AbsBaseActivity<ActivityQuickMixBinding>() {
     private var sizeMix = 70
     private var isLoading = false
     private var isOfflineMode = false
-
     private val arrMix = arrayListOf<CustomModel>()
-
     @Inject
     lateinit var apiRepository: ApiRepository
-
     val adapter by lazy { QuickAdapter(this@QuickMixActivity) }
 
     // Thread-safe cache

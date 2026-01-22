@@ -512,14 +512,12 @@ class CustomviewActivity : AbsBaseActivity<ActivityCustomizeBinding>() {
                             )
                             x.add(arrInt[y])
                         }
-
                         viewModel.addAvatar(
                             AvatarModel(
                                 path,
                                 arrBlackCentered[blackCentered].avt,
                                 arrBlackCentered[blackCentered].checkDataOnline,
                                 fromList(x)
-
                             )
                         )
                         startActivity(

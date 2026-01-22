@@ -85,7 +85,16 @@
             <!--                app:layout_constraintTop_toTopOf="parent"-->
             <!--                app:layout_constraintBottom_toBottomOf="parent" />-->
         </androidx.constraintlayout.widget.ConstraintLayout>
-
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/body"
+            android:src="@drawable/bg_custom_draw"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/rl"
+            app:layout_constraintStart_toStartOf="@+id/rl"
+            app:layout_constraintBottom_toBottomOf="@+id/rl"
+            app:layout_constraintTop_toTopOf="@+id/rl"
+            />
         <RelativeLayout
             android:id="@+id/rl"
             android:layout_width="0dp"
@@ -99,10 +108,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnSave">
 
-            <!--            <androidx.appcompat.widget.AppCompatImageView-->
-            <!--                android:id="@+id/body"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="match_parent" />-->
+
 
         </RelativeLayout>
 
@@ -132,7 +138,7 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imvNoColor"
-            android:layout_width="60dp"
+            android:layout_width="38dp"
             android:layout_height="0dp"
             android:elevation="2dp"
             android:src="@drawable/imv_nocolor"
@@ -155,7 +161,7 @@
 
             <LinearLayout
                 android:id="@+id/llColor"
-                android:layout_width="60dp"
+                android:layout_width="38dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:background="@drawable/bg_8_color"

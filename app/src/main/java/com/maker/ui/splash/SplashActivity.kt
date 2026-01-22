@@ -1,6 +1,7 @@
 package com.maker.ui.splash
 
 import android.content.Intent
+import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import com.maker.base.AbsBaseActivity
 import com.maker.data.callapi.reponse.DataResponse
@@ -17,39 +18,36 @@ import com.maker.utils.CONST
 import com.maker.utils.DataHelper
 import com.maker.utils.DataHelper.getData
 import com.maker.utils.SharedPreferenceUtils
+import com.maker.utils.showToast
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+import kotlin.collections.forEach
+import kotlin.collections.get
 import kotlin.collections.toList
 
 @AndroidEntryPoint
 class SplashActivity : AbsBaseActivity<ActivitySplashBinding>() {
     @Inject
     lateinit var apiRepository: ApiRepository
-
     @Inject
     lateinit var sharedPreferenceUtils: SharedPreferenceUtils
-
     private var minDelayPassed = false
     private var dataReady = false
-
     override fun getLayoutId(): Int = R.layout.activity_splash
-
     override fun initView() {
         // Observe data loading TRƯỚC khi load
         observeDataLoading()
-
         // Đợi tối thiểu 3 giây
         lifecycleScope.launch {
-
+            delay(3000)
+            minDelayPassed = true
             // Nếu data đã sẵn sàng thì chuyển màn ngay
             if (dataReady) {
                 navigateToNextScreen()
             }
-            delay(3000)
-            minDelayPassed = true
         }
     }
 
@@ -167,7 +165,6 @@ class SplashActivity : AbsBaseActivity<ActivitySplashBinding>() {
                             }
                         }
                     }
-
                     else -> {
                         // Loading hoặc trạng thái khác - đợi
                     }

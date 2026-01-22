@@ -66,13 +66,23 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_custom_draw"
+            app:layout_constraintTop_toTopOf="@+id/drawView"
+            app:layout_constraintEnd_toEndOf="@+id/drawView"
+            app:layout_constraintBottom_toBottomOf="@+id/drawView"
+            app:layout_constraintStart_toStartOf="@+id/drawView"
+            />
 
         <com.maker.custom.DrawView
             android:id="@+id/drawView"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="70dp"
             android:layout_width="0dp"
+            android:elevation="1dp"
             android:layout_height="0dp"
             android:layerType="hardware"
             app:layout_constraintDimensionRatio="3:4.68"
@@ -82,6 +92,7 @@
             app:layout_constraintTop_toBottomOf="@+id/llTop">
 
             <ImageView
+
                 android:id="@+id/imvBackground"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -104,7 +115,7 @@
         <LinearLayout
             android:id="@+id/llBottom"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:gravity="center"
             android:elevation="2dp"
             android:orientation="horizontal"
@@ -116,28 +127,28 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btnBg"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="46dp"
                 android:layout_weight="1"
                 android:src="@drawable/imv_bg_true" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btnItem"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="46dp"
                 android:layout_weight="1"
                 android:src="@drawable/imv_item" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btnBgText"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="46dp"
                 android:layout_weight="1"
                 android:src="@drawable/imv_bg_text" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btnText"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="46dp"
                 android:layout_weight="1"
                 android:src="@drawable/imv_text" />
         </LinearLayout>
