@@ -23,6 +23,7 @@ import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
+data class LoadingProgress(val loaded: Int, val total: Int)
 
 object DataHelper {
     val TAG = "quylh"
@@ -102,6 +103,7 @@ object DataHelper {
 
     //lớp view
     var listImageSortView = arrayListOf<String>()
+    var assetsLoadProgress = MutableLiveData<LoadingProgress>()
 
     //thứ tự navigation
     var listImage = arrayListOf<String>()
@@ -116,6 +118,26 @@ object DataHelper {
             )
             var assetManager = assets
             val data = assetManager.list("data")
+            val dataAvatar = data ?: emptyArray()
+            // Tính tổng số avatar cần load
+            var totalAvatars = 0
+            var loadedAvatars = 0
+
+            // Đếm trước số lượng avatar
+            for (mData in dataAvatar) {
+                val subFolders = assetManager.list("data/$mData") ?: continue
+                for (bodypart in subFolders) {
+                    val subBodyPart = assetManager.list("data/$mData/$bodypart")
+                    if (subBodyPart == null || subBodyPart.isEmpty()) {
+                        // Đây là avatar file
+                        totalAvatars++
+                    }
+                }
+            }
+
+            // Post initial progress
+            assetsLoadProgress.postValue(LoadingProgress(0, totalAvatars))
+
             for (mData in data!!) {     //mData - cat1
                 val subFolders = assetManager.list("data/$mData") ?: continue
                 val catModel = CustomModel(

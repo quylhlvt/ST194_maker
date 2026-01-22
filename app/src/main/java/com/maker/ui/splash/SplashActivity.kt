@@ -43,12 +43,13 @@ class SplashActivity : AbsBaseActivity<ActivitySplashBinding>() {
 
         // Đợi tối thiểu 3 giây
         lifecycleScope.launch {
-            delay(3000)
-            minDelayPassed = true
+
             // Nếu data đã sẵn sàng thì chuyển màn ngay
             if (dataReady) {
                 navigateToNextScreen()
             }
+            delay(3000)
+            minDelayPassed = true
         }
     }
 

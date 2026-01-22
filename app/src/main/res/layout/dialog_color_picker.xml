@@ -18,11 +18,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="50dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/nunito_bold"
+                android:fontFamily="@font/crimson_text_bold"
                 android:gravity="center"
                 android:text="@string/choose_color"
                 android:textColor="@color/app_color"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -91,11 +91,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:fontFamily="@font/nunito_bold"
+                            android:fontFamily="@font/crimson_text_bold"
                             android:gravity="center"
                             android:text="@string/done"
                             android:textColor="@color/app_color"
-                            android:textSize="16sp" />
+                            android:textSize="20sp" />
                     </RelativeLayout>
                     <RelativeLayout
                         android:id="@+id/btnDone"
@@ -108,7 +108,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:fontFamily="@font/nunito_bold"
+                            android:fontFamily="@font/croissant_one_regular"
                             android:gravity="center"
                             android:text="@string/done"
                             android:textColor="@color/app_color"
