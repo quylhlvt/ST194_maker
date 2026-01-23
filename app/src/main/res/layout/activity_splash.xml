@@ -17,30 +17,30 @@
             android:id="@+id/appCompatImageView4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:adjustViewBounds="true"
             android:src="@drawable/img_title_splash"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/appCompatImageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/image_avatar_splash"
-            app:layout_constraintBottom_toTopOf="@+id/animationView"
-            app:layout_constraintDimensionRatio="3.6:4.33"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView4" />
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/appCompatImageView2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:src="@drawable/image_avatar_splash"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/animationView"-->
+<!--            app:layout_constraintDimensionRatio="3.6:4.33"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView4" />-->
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/animationView"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="-10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="-20dp"
             app:layout_constraintBottom_toTopOf="@+id/appCompatTextView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -14,16 +14,27 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imvBack"
             android:layout_width="32dp"
-            android:elevation="1dp"
             android:layout_height="32dp"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="50dp"
+            android:elevation="1dp"
+            android:layout_marginStart="20dp"
             android:src="@drawable/ic_back_app"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvMusic"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="50dp"
+            android:elevation="1dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_music_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+
+        <com.fokalore.ocmaker.create.utils.StrokeTextView
             android:id="@+id/titleSetting"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,8 +49,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/imvBack"
-            android:fontFamily="@font/crimsontext_regular"
-            android:textColor="@color/app_color2"
+            android:fontFamily="@font/rufing_personaluse"
+            android:textColor="@color/app_color"
             android:textSize="24sp"
             app:strokeColor="@color/app_color"
             app:strokeJoinStyle="miter"
@@ -69,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:fontFamily="@font/crimsontext_regular"
+                android:fontFamily="@font/rufing_personaluse"
                 android:text="@string/language"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -102,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:fontFamily="@font/crimsontext_regular"
+                android:fontFamily="@font/rufing_personaluse"
                 android:text="@string/rate_us"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -135,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:fontFamily="@font/crimsontext_regular"
+                android:fontFamily="@font/rufing_personaluse"
                 android:text="@string/share_app"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
@@ -168,7 +179,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
-                android:fontFamily="@font/crimsontext_regular"
+                android:fontFamily="@font/rufing_personaluse"
                 android:text="@string/privacy_amp_policy"
                 android:textColor="@color/white"
                 android:textSize="16sp" />

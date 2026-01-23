@@ -12,7 +12,7 @@ class StrokeTextView  @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyle: Int = 0
 ) : AppCompatTextView(context, attrs, defStyle) {
 
-    private var strokeWidth = 1.dp(context).toFloat()
+    private var strokeWidth = 4.dp(context).toFloat()
     private var strokeColor = "#FFFFFFFF".toColorInt()
 
     override fun onDraw(canvas: Canvas) {

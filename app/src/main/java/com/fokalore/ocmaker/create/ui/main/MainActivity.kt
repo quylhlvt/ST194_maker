@@ -34,6 +34,7 @@ import com.fokalore.ocmaker.create.utils.newIntent
 import com.fokalore.ocmaker.create.utils.onSingleClick
 import com.fokalore.ocmaker.create.R
 import com.fokalore.ocmaker.create.databinding.ActivityMainBinding
+import com.fokalore.ocmaker.create.ui.randomone.RandomCatActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -82,7 +83,8 @@ class MainActivity : AbsBaseActivity<ActivityMainBinding>() {
         binding.apply {
             tv1.isSelected = true
             tv2.isSelected = true
-            tv3.isSelected = true
+            btnQuickMaker.isSelected = true
+            btnMyAlbum.isSelected = true
         }
         val filter = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
         registerReceiver(networkReceiver, filter)
@@ -211,6 +213,26 @@ class MainActivity : AbsBaseActivity<ActivityMainBinding>() {
                         newIntent(
                             applicationContext,
                             QuickMixActivity::class.java
+                        )
+                    )
+                } else {
+                    lifecycleScope.launch {
+                        val dialog= DialogExit(
+                            this@MainActivity,
+                            "awaitdata"
+                        )
+                        dialog.show()
+                        delay(1500)
+                        dialog.dismiss()
+                    }
+                }
+            }
+            btnRandomCat.onSingleClick {
+                if (isDataReady()) {
+                    startActivity(
+                        newIntent(
+                            applicationContext,
+                            RandomCatActivity::class.java
                         )
                     )
                 } else {

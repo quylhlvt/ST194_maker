@@ -13,7 +13,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="16dp"
-    app:strokeWidth="0dp"
+    app:strokeWidth="4dp"
+    app:strokeColor="@color/app_color"
     android:background="@color/transparent"
     android:layout_marginHorizontal="5dp"
     app:cardElevation="3dp"
@@ -31,7 +32,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="1.56:2.1"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">

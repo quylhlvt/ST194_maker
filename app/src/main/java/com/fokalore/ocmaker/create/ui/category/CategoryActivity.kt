@@ -174,10 +174,8 @@ class CategoryActivity : AbsBaseActivity<ActivityCategoryBinding>() {
                                         }
                                     }
                                 }
-
                                 newOnlineDataList.add(dataModel)
                             }
-
                             // Lấy data offline hiện tại (những data có checkDataOnline = false)
                             val currentOfflineData = DataHelper.arrBlackCentered.filter { !it.checkDataOnline }
 

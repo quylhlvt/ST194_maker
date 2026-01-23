@@ -23,7 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+        <com.fokalore.ocmaker.create.utils.StrokeTextView
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -32,8 +32,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/imvBack"
-            android:fontFamily="@font/crimsontext_regular"
-            android:textColor="@color/app_color2"
+            android:fontFamily="@font/rufing_personaluse"
+            android:textColor="@color/app_color"
             android:textSize="24sp"
             app:strokeColor="@color/app_color"
             app:strokeJoinStyle="miter"

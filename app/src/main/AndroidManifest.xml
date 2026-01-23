@@ -7,10 +7,11 @@
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <queries>
+
         <!-- Telegram -->
         <package android:name="org.telegram.messenger" />
         <package android:name="org.telegram.messenger.web" />
@@ -23,16 +24,18 @@
         <!-- Intent filters for sharing -->
         <intent>
             <action android:name="android.intent.action.SEND" />
+
             <data android:mimeType="image/*" />
         </intent>
         <intent>
             <action android:name="android.intent.action.SEND_MULTIPLE" />
+
             <data android:mimeType="image/*" />
         </intent>
     </queries>
 
     <application
-        android:name="com.fokalore.ocmaker.create.App"
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -40,11 +43,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        tools:replace="android:fullBackupContent"
-        android:theme="@style/Theme.ST195">
-
+        android:theme="@style/Theme.ST195"
+        tools:replace="android:fullBackupContent">
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.splash.SplashActivity"
+            android:name=".ui.randomone.RandomCatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -54,53 +59,54 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.language.LanguageActivity"
+            android:name=".ui.language.LanguageActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.permision.PermissionActivity"
+            android:name=".ui.permision.PermissionActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.tutorial.TutorialActivity"
+            android:name=".ui.tutorial.TutorialActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.my_creation.MyCreationActivity"
+            android:name=".ui.my_creation.MyCreationActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.succes.SuccessActivity"
+            android:name=".ui.succes.SuccessActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.view.ViewActivity"
+            android:name=".ui.view.ViewActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.main.MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.setting.SettingActivity"
+            android:name=".ui.setting.SettingActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.category.CategoryActivity"
+            android:name=".ui.category.CategoryActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.customview.CustomviewActivity"
+            android:name=".ui.customview.CustomviewActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.quick_mix.QuickMixActivity"
+            android:name=".ui.quick_mix.QuickMixActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.fokalore.ocmaker.create.ui.background.BackgroundActivity"
+            android:name=".ui.background.BackgroundActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -111,13 +117,14 @@
                 android:resource="@xml/filepaths" />
         </provider>
         <provider
-            android:name="com.fokalore.ocmaker.create.utils.share.whatsapp.StickerContentProvider"
+            android:name=".utils.share.whatsapp.StickerContentProvider"
             android:authorities="com.fokalore.ocmaker.create.utils.share.whatsapp.StickerContentProvider"
             android:enabled="true"
             android:exported="true"
             android:readPermission="com.whatsapp.sticker.READ" />
+
         <service
-            android:name="com.fokalore.ocmaker.create.service.MyFirebaseMessagingService"
+            android:name=".service.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

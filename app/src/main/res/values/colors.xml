@@ -7,6 +7,7 @@
     <color name="FFCC00">#FFCC00</color>
     <color name="D89446">#D89446</color>
     <color name="FF3F3F">#FF3F3F</color>
+    <color name="FF0000">#FF0000</color>
     <color name="ff5db6">#FF5DB6</color>
     <color name="_0091b2">#0091B2</color>
     <color name="_1f2f4f">#1F2F4F</color>
@@ -73,7 +74,7 @@
     <color name="stroke_forcus_1">#6ADFFF</color>
     <color name="stroke_forcus_2">#3175EB</color>
     <color name="color_content_dialog">#991F2F4F</color>
-    <color name="app_color">#AB7920</color>
+    <color name="app_color">#FF7514</color>
     <color name="app_color2">#5F2D08</color>
     <color name="app_color3">#AC7B25</color>
     <color name="shadown_item_cate">#E8C0F5</color>

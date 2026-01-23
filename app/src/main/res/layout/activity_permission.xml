@@ -14,9 +14,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="50dp"
-            android:fontFamily="@font/crimsontext_regular"
+            android:fontFamily="@font/rufing_personaluse"
             android:text="@string/permission"
-            android:textColor="@color/app_color2"
+            android:textColor="@color/app_color"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -29,8 +29,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imv"
-            android:layout_width="126dp"
-            android:layout_marginTop="36dp"
+            android:layout_width="213dp"
+            android:layout_marginTop="-35dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/img_per"
@@ -45,9 +45,9 @@
             android:layout_marginHorizontal="28dp"
             android:paddingHorizontal="5dp"
             android:paddingVertical="18dp"
+            android:layout_marginTop="-25dp"
             android:textSize="14sp"
             android:gravity="center"
-            android:background="@drawable/bg_20_solid_white_stroke_blue"
             app:layout_constraintTop_toBottomOf="@id/imv" />
 
         <ScrollView
@@ -81,10 +81,10 @@
                         android:layout_alignParentBottom="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="16dp"
-                        android:fontFamily="@font/crimson_text_semi_bold"
+                        android:fontFamily="@font/nunito_semi_bold"
                         android:gravity="center"
                         android:text="@string/storage"
-                        android:textColor="@color/white"
+                        android:textColor="@color/app_color"
                         android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatImageView
@@ -117,10 +117,10 @@
                         android:layout_alignParentBottom="true"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="16dp"
-                        android:fontFamily="@font/crimson_text_semi_bold"
+                        android:fontFamily="@font/nunito_semi_bold"
                         android:gravity="center"
                         android:text="@string/notifications"
-                        android:textColor="@color/white"
+                        android:textColor="@color/app_color"
                         android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatImageView
@@ -141,11 +141,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="206dp"
-            android:fontFamily="@font/crimson_text_semi_bold"
+            android:fontFamily="@font/rufing_personaluse"
             android:gravity="center"
             android:padding="10dp"
             android:text="@string/continue2"
-            android:textColor="@color/app_color2"
+            android:textColor="@color/app_color"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -30,8 +30,8 @@
     <string name="share">Share</string>
     <string name="add_to_telegram">Add to TeleGram</string>
     <string name="add_to_whatsapp">Add to Whatsapp</string>
-    <string name="pony_maker">Folklore Maker</string>
-    <string name="trending_custom">Quick Maker</string>
+    <string name="pony_maker">Cat Creator</string>
+    <string name="trending_custom">Random Cat</string>
     <string name="trending">Trending</string>
     <string name="no_item_here">No current history</string>
     <string name="delete">Delete</string>
@@ -59,11 +59,11 @@
     <string name="share_app">Share app</string>
     <string name="privacy_policy"><![CDATA[Privacy & policy]]></string>
     <string name="the_layer_have_only_one_item">The layer have only one item</string>
-    <string name="intro1">Make Folklore Character</string>
-    <string name="intro2">Chacracter Diversity</string>
+    <string name="intro1">Make Your Perfect Meme Cat</string>
+    <string name="intro2">Diverse Your Cat Meme Style</string>
     <string name="intro3">Variety Items</string>
     <string name="you_have_not_selected_anything_yet">You have not selected any item yet</string>
-    <string name="my_work">My Folklore</string>
+    <string name="my_work">My Work</string>
     <string name="my_creation">My album</string>
     <string name="privacy_amp_policy"><![CDATA[Privacy & Policy]]></string>
     <string name="please_check_your_network_connection">Please check your network</string>
@@ -106,4 +106,5 @@
     <string name="please_connect_to_the_internet_to_download_more_data">Please connect to the internet to download more data</string>
     <string name="data">Data</string>
     <string name="rate_successful">Thank you for rate our app</string>
+    <string name="quickcreate">Quick Create</string>
 </resources>

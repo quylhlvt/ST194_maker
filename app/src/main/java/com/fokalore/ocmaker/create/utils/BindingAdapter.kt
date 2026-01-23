@@ -40,7 +40,7 @@ fun TextView.setTextColor(check: Boolean) {
     if (check) {
         this.setTextColor("#ffffff".toColorInt())
     } else {
-        this.setTextColor("#AB7920".toColorInt())
+        this.setTextColor("#FF7514".toColorInt())
     }
 }
 @BindingAdapter("setBG")

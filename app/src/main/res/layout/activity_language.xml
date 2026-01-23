@@ -23,17 +23,17 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
+                <com.fokalore.ocmaker.create.utils.StrokeTextView
 
                     android:id="@+id/tvTitle2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="16dp"
-                    android:fontFamily="@font/crimsontext_regular"
+                    android:fontFamily="@font/rufing_personaluse"
                     android:gravity="center"
                     android:text="@string/language"
-                    android:textColor="@color/app_color2"
-                    android:textSize="28sp"
+                    android:textColor="@color/app_color"
+                    android:textSize="24sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -50,11 +50,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="16dp"
-                    android:fontFamily="@font/crimsontext_regular"
+                    android:fontFamily="@font/rufing_personaluse"
                     android:gravity="center_vertical"
                     android:text="@string/language"
-                    android:textColor="@color/app_color2"
-                    android:textSize="28sp"
+                    android:textColor="@color/app_color"
+                    android:textSize="24sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
